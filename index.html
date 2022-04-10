@@ -9,6 +9,7 @@
 	</title>
 </head>
 <body>
+<div class="fondo">
 	<div class="container">
 		
 		<!-- Titulo -->
@@ -34,17 +35,52 @@
 			</div>
 			<!-- Nombre correo edad -->
 			<div class="form_group">
-				<label></label>
-				<select>
-					<option></option>
+				<label>Que posicion juegas?</label>
+				<select id="dropdown">
+					<option>Portero</option>
+					<option>Defensa</option>
+					<option>Centrocampista</option>
+					<option>Delantero</option>
 				</select>
 			</div>
-			<div class="form_group"></div>
-			<div class="form_group"></div>
-			<div class="form_group"></div>
-			<div class="form_group"></div>
+
+			<div class="form_radio">
+				<label>Recomendarias nuestra academia?</label> 
+				<input type="radio" name="si" value="si" class="radio1">
+				<p class="text_radio1">SI</p> <br>
+				<input type="radio" name="no" value="no" class="radio2">
+				<p class="text_radio2">NO</p>
+			</div class="form_radio">
+
+			<div class="form_radio">
+				<label>Nos ayudarias a crecer como equipo?</label> 
+				<input type="radio" name="si" value="si" class="radio1">
+				<p class="text_radio1">SI</p> <br>
+				<input type="radio" name="no" value="no" class="radio2">
+				<p class="text_radio2">NO</p>
+			</div class="form_radio">
+
+			<div class="form_group">
+				<label for="Experiencia">Tienes experiencia en otras academias?</label>
+				<input type="checkbox" value="si">
+				<p class="text_checkbox1">SI</p> <br>
+				<input type="checkbox" value="no">
+				<P class="text_checkbox2">NO</P>
+			</div>
+
+			<div class="form_group">
+				<label for="comentario">Deja un comentario o sugerencia</label>
+				<textarea name="comentario" placeholder="Deja tu omentario" class="textarea">
+				</textarea>
+			</div>
+
+			<div>
+				<button id="submit">Enviar</button>
+			</div>
+			
 		</form>
 		<!-- Formulario -->
 	</div>
+</div>	
 </body>
 </html>
